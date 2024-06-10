@@ -25,7 +25,7 @@ conda activate coreFeaturesEnv
 ## Install Required Python Packages
 
 ```bash
-pip install argpass==0.0.2 numpy==1.21.6 pandas==1.3.5 tqdm==4.66.1
+pip install argpass==0.0.2 numpy==1.21.6 pandas==1.3.5 tqdm==4.66.1 PyYAML==6.0.1
 ```
 
 ## Install fpocket
@@ -41,7 +41,7 @@ conda install fpocket
 3. Extract the downloaded file:
 
 ```bash
-tar zxvf ~/bin/msms_i86_64Linux2_2.6.1.tar.gz
+tar zxvf ~/bin/msms_i86_64Linux2_2.6.1.tar.gz -C ~/bin/MSMS
 ```
 
 ## Edit the config script or make your own
@@ -60,8 +60,8 @@ Ensure that `inputDir` points to the location of your PDB files, `outputDir` spe
 Now, you are ready to run coreFeatures
 
 ## Useage
-From the coreFeatures directory, run the following in the command line:
+From the caveFeatures directory, run the following in the command line:
 ```bash
-python coreFeatures.py --config config.py
+python caveFeatures.py --config config.yaml
 ```
 You may want to change the config file name to match your own config file
